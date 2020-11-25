@@ -2,7 +2,7 @@
 title: "Development Lifecycle"
 date: 2020-11-25T22:08:18+01:00
 draft: true
-tags: [sdlc]
+tags: [sdlc, vulnerabilities, threatmodeling]
 ---
 Creating a software that is safe to use is no easy task. We 
 will look at some activities in different phases. The backdrop is that 
