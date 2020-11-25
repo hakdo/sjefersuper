@@ -1,7 +1,7 @@
 ---
 title: "Content Security Policy: the script-src directive"
 date: 2020-11-24T23:44:55+01:00
-draft: true
+draft: false
 tags: [xss, csp, script, secheaders]
 ---
 One of the most common web vulnerabilities is cross-site scripting. This 

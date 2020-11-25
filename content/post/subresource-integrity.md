@@ -1,7 +1,7 @@
 ---
 title: "Subresource Integrity"
 date: 2020-11-24T23:30:53+01:00
-draft: true
+draft: false
 tags: [sri, supplychain]
 ---
 
