@@ -10,3 +10,6 @@ provided by modern web browsers.
 
 You find the practices under [websec practices](/post)
 
+This is an open source project. You can contribute to it by forking and making 
+a pull request. Repo on [Github](https://github.com/hakdo/sjefersuper)
+
