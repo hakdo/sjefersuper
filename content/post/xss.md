@@ -2,7 +2,7 @@
 title: "XSS: Cross-site scripting"
 date: 2020-11-24T23:30:53+01:00
 draft: false
-tags: [xss, owasp-top-10]
+tags: [xss, owasp-top-10, vulnerabilities]
 ---
 One of the most common web vulnerabilities is cross-site scripting. It is number 7 on 
 OWASP TOp 10 [(2017)](https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS)).

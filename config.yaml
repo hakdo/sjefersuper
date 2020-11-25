@@ -16,7 +16,7 @@ imaging:
 
 params:
   description: Simple practices to keep web pages secure.
-  homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
+  homeMetaContent: Short explanations and tips to make web pages more secure. 
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: 2006-01-02
