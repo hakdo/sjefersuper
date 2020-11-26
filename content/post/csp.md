@@ -25,7 +25,7 @@ Content-Security-Policy: policy-goes-here
 | Threat | Relevant directive |
 |--------|--------------------|
 |[xss](../xss)|[script-src](../csp-script-src)|
-|clickjacking |frame-ancestors|
+|[clickjacking](../clickjacking) |[frame-ancestors](../csp-frame-ancestors)|
 
 # Testing your policy
 Before enabling a CSP directive, you should its effect on the site. This can 
