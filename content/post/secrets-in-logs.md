@@ -14,7 +14,7 @@ respond to problems you can't see.
 : Logs containing too much information is a common cause of information disclosure. A common example
 is sensitive access tokens landing in server logs, visible to customer support and many others. 
 
-In this post we look at senstive data exposure in logs. Common ways this can happen include: 
+In this post we look at sensitive data exposure in logs. Common ways this can happen include: 
 
 - Sensitive data in URL parameters
 - Sensitive data logged during exception handling
@@ -22,7 +22,7 @@ In this post we look at senstive data exposure in logs. Common ways this can hap
 ## How do we avoid this? 
 The first thing we should think about is a threat model as discussed in our 
 [secure development lifecycle post](../devlifecycle). 
-If we think through *what can go wrong* and then plan how to mitiggate that, we are off to a good start. 
+If we think through *what can go wrong* and then plan how to mitigate that, we are off to a good start. 
 
 We should log events that we anticipate a use for in one of the following cases: 
 
@@ -43,12 +43,12 @@ less sensitive.
 
 {{<warning>}}
 Exposing personal data that can result in a breach of the privacy rights of individuals may be 
-considered a breach of privcy legislation such as the GDPR. If this is needed, you should perform 
+considered a breach of privacy legislation such as the GDPR. If this is needed, you should perform 
 a legitimate interest assessment first, involving your organization's privacy specialists.  
 {{</warning>}}
 
 ## Allowing sensitive data for debugging and testing
 If you are debugging or investigating an unexpected event, turning on detailed debug logging 
 including the sensitive data in question can be a good solution. This should be done using 
-synthetic test data in an envioronment that is separate to the production environment. This way, 
+synthetic test data in an environment that is separate to the production environment. This way, 
 the data exposed will not have any impact for the application, its data and its users. 

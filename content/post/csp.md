@@ -47,7 +47,7 @@ You can turn on reports of policy violations. Then you need to supply a directiv
 tells the browser where to send those reports. The traditional way of doing this is 
 to provide an endpoint that will receive the reports: `report-uri`. This is now 
 deprecated and the official recommendation is to use the `report-to`directive with a 
-JSON object explaning where to send those reports. The `report-to` directive is not 
+JSON object explaining where to send those reports. The `report-to` directive is not 
 supported yet in most browsers, so if you want reporting, you should probably 
 configure both. You can read more about this at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/report-uri. 
 

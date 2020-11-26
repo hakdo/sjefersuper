@@ -11,7 +11,7 @@ the developer intended to put there. You can see if someone uses it
 by looking for the *integrity* attribute on external content. 
 
 ```html
-<link rel="text/css" href="some-url-to-a-third-party" integirty=<a-hash-goes-here>>
+<link rel="text/css" href="some-url-to-a-third-party" integrity=<a-hash-goes-here>>
 ```
 
 If the hash of the file loaded is different from the one specified, the content 

@@ -13,7 +13,7 @@ logic and architecture, and 2) bugs.
 - Development
 - Testing and validation
 - Monitoring
-- Issue prioritisation
+- Issue prioritization
 
 ## Planning
 During planning we should think not only about how the application will fulfill its 
@@ -53,7 +53,7 @@ is exploiting.
 
 
 ## Developing security requirements
-We should use the vulnerabilties identified in the threat model to develop 
+We should use the vulnerabilities identified in the threat model to develop 
 testable security requirements. ¨
 
 Let us do that for the password reset link we discussed in the example above. 
@@ -61,7 +61,7 @@ We should test that these requirements are fulfilled before the application is a
 be deployed to production. 
 
 Requirements: 
-- The user ID should be repalced with a random, non-guessable token. Sensitive 
+- The user ID should be replaced with a random, non-guessable token. Sensitive 
 URL parameters should not be guessable.
 - The link for password reset should only be possible to use once
 - THe link should expire after some time (1 hour)
@@ -93,7 +93,7 @@ should be used:
 2. Check the source code with a static analyzer (also automated)
 3. Write unit tests covering every security requirement that is based on the threat model
 
-Ideally you should not allow any known vulnerabilities to go to production, but at least make this the basic rule of enagement: 
+Ideally you should not allow any known vulnerabilities to go to production, but at least make this the basic rule of engagement: 
 {{<warning>}}
 Do not allow vulnerabilities that are easy to discover and exploit in production.
 {{</warning>}}
@@ -111,7 +111,7 @@ what events to log from the application itself. Vulnerabilities we are only
 able to detect, and not prevent, should be logged with high priority, and preferably 
 generate an alert to someone who can react to it. 
 
-*Discovering vulnrabliities*: vulnerabilities in a production applicaton can be in 
+*Discovering vulnerabilities*: vulnerabilities in a production application can be in 
 our code, in the infrastructure and environment we depend on, or in third-party 
 dependencies in our code (external libraries). 
 
@@ -128,16 +128,16 @@ can both detect and alert us to it, and provide a fix in a
 pull request. The solution we use should at least be automated, so it is not forgotten. 
 
 ## Prioritising issues
-When we discover vulnerabiltiies, fixing them is important. It can be easy to think 
+When we discover vulnerabilities, fixing them is important. It can be easy to think 
 that we will only fix the "important" things, but unfortunately, allowing a lot of 
 "low-risk" vulnerabilities can lead to risk creep. Several of them may be chained together 
-by an atatcker to create higher impact, and fixing them later can become very costly. 
+by an attacker to create higher impact, and fixing them later can become very costly. 
 
-A good strategy can be to prioritise any vulnerabilities that can lead to unacceptable 
+A good strategy can be to prioritize any vulnerabilities that can lead to unacceptable 
 impact with limited cost for the attacker should be fixed as soon as possible, whereas 
 less critical issues are planned into the normal development as "maintenance work". 
 
-The konwn vulnerabilities in the application should be monitored. If the technical debt 
+The known vulnerabilities in the application should be monitored. If the technical debt 
 related to security vulnerabilities is increasing with time, we have a problem. 
 Technical debt carries a very high interest, and if it is not paid off according to schedule 
 it will grow beyond our control. 
