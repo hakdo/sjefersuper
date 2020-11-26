@@ -127,7 +127,7 @@ For example,
 can both detect and alert us to it, and provide a fix in a 
 pull request. The solution we use should at least be automated, so it is not forgotten. 
 
-## Prioritising issues
+## Prioritizing issues
 When we discover vulnerabilities, fixing them is important. It can be easy to think 
 that we will only fix the "important" things, but unfortunately, allowing a lot of 
 "low-risk" vulnerabilities can lead to risk creep. Several of them may be chained together 
