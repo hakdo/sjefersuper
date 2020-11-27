@@ -4,7 +4,6 @@ defaultContentLanguage: en
 title: websec
 theme: cupper-hugo-theme
 enableGitInfo: true
-googleAnalytics: G-Q5H814N0M0
 
 taxonomies:
   tag: tags
