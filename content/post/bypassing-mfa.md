@@ -1,7 +1,7 @@
 ---
 title: "Bypassing Mfa"
 date: 2020-11-28T12:36:15+01:00
-draft: true
+draft: false
 tags: [vulnerabilities, owasp-top-10]
 ---
 Multi-factor authentication (MFA), to-factor authentication, or perhaps two-step verification? 
