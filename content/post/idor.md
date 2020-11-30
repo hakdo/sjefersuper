@@ -1,7 +1,7 @@
 ---
 title: "Idor"
 date: 2020-11-30T18:55:17+01:00
-draft: true
+draft: false
 tags: [vulnerabilities, owasp-top-10]
 ---
 Insecure direct object references are very common, and is often referred to as "IDOR". 
