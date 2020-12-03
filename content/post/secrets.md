@@ -30,7 +30,7 @@ applications.
 The best way to manage secrets in an application is to use a "secrets store". All the big cloud 
 vendors have their own offerings, or you can install a secret store yourself. A popular choice is 
 [Hashicorp Vault](https://www.vaultproject.io/) which comes both in an open-source variant and an 
-"enterprise" version with more feature for money. The point of using a secret engine is that it should 
+"enterprise" version with more features for money. The point of using a secret engine is that it should 
 provide: 
 
 - Secure cryptographic operations
