@@ -36,7 +36,7 @@ and
 
 Say your application performs credit card transactions and checks a deny list for 
 every transaction, and you se a single user performing a high number of transactions 
-using different credt cards, where half of them give the error above. What would this 
+using different credit cards, where half of them give the error above. What would this 
 be an indication of? It may be time to call the police. 
 
 ## Security logging at Layer 7
@@ -106,7 +106,7 @@ easy to guess for someone with access to the logs.
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Nobody gets hacked. To get hacked you need somebody with 197 IQ and he needs about 15 percent of your password.&quot;<a href="https://t.co/6aR8yU2MVg">pic.twitter.com/6aR8yU2MVg</a></p>&mdash; Martin (@mshelton) <a href="https://twitter.com/mshelton/status/1318303047647309824?ref_src=twsrc%5Etfw">October 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Hence: we log hashes (but don't use 
-the same hashing algorithm as the actual password hash in your authenticaiton database).
+the same hashing algorithm as the actual password hash in your authentication database).
 Let's say we have this pattern: 
 
 ```
@@ -127,7 +127,7 @@ hashed version of the password.
 Yes, we can create some rules of thumb. Let's call them our 10 commandments of 
 layer 7 security logging!
 
-1. Make it easy to tune verbosity of logging up and down according to neeed
+1. Make it easy to tune verbosity of logging up and down according to need
 2. Do create threat models and use them to figure out what to log
 3. Make sure the logs are sent tot a separate storage system that is not reachable
 from a compromised application (to avoid tampering)
