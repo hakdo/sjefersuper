@@ -1,5 +1,5 @@
 ---
-title: "Threat Modeling"
+title: "Threat Modeling How-To"
 date: 2021-02-20T09:01:39+01:00
 draft: false
 tags: [threatmodeling, vulnerabilities]
