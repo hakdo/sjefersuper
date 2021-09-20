@@ -45,7 +45,7 @@ with open("backup.data", "rb") as file:
     mydata = pickle.loads(pickle_data)
 ```
 
-This would be completely fine, if only we could guaranteee that the file "backup.data" has not been 
+This would be completely fine, if only we could guarantee that the file "backup.data" has not been 
 tampered with. What we intend for the data to look like is perhaps something like this: 
 
 ```python
@@ -55,7 +55,7 @@ profile = {
 }
 ```
 
-Let's say an attacker comes along and has write access to the `backup.data`file. The attacker then overwrites the file 
+Let's say an attacker comes along and has write access to the `backup.data` file. The attacker then overwrites the file 
 with a pickled version of the following class:
 
 ```python
@@ -71,7 +71,7 @@ The reason is that `__reduce__`is a *magic function* that will be executed direc
 For a good write-up on pickle deserialization exploitation at machine instruction level, see [DANGEROUS PICKLES — MALICIOUS PYTHON SERIALIZATION](https://intoli.com/blog/dangerous-pickles/).
 
 ## What about NodeJS?
-We can do exactly the same "demo" with NodeJS, if you rely on one of several exploitable serializatoin libraries. 
+We can do exactly the same "demo" with NodeJS, if you rely on one of several exploitable serialization libraries. 
 One of the most popular (and easily exploitable) is [node-serialize](https://www.npmjs.com/package/node-serialize).
 The NPM page doesn't really tell you anything about the dangers about using its deserializer but "npm audit" will 
 tell you that you are moving into the danger zone. 
@@ -110,7 +110,7 @@ But also now, an evil hacker has managed to overwrite our file with their own pa
 ```
 
 If you deserialize the string above using node-serialize's "deserialize" function on a Mac, the computer will 
-speak to you and open an enligtening [YouTube video](https://youtu.be/V4MF2s6MLxY) in your browser for you. 
+speak to you and open an enlightening [YouTube video](https://youtu.be/V4MF2s6MLxY) in your browser for you. 
 
-This attack uses an immedately invoked JavaScript function in the payload, and because the deserializer relies on `eval`, 
+This attack uses an immediately invoked JavaScript function in the payload, and because the deserializer relies on `eval`, 
 this function is executed upon deserializaion.
