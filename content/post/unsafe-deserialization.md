@@ -112,5 +112,8 @@ But also now, an evil hacker has managed to overwrite our file with their own pa
 If you deserialize the string above using node-serialize's "deserialize" function on a Mac, the computer will 
 speak to you and open an enlightening [YouTube video](https://youtu.be/V4MF2s6MLxY) in your browser for you. 
 
+Here's how this looks in practice:
+{{< youtube ffoQ0CPKh8Y >}}
+
 This attack uses an immediately invoked JavaScript function in the payload, and because the deserializer relies on `eval`, 
 this function is executed upon deserializaion.
